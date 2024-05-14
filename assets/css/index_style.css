@@ -1,0 +1,270 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body{
+margin:0;
+min-height: 100vh;
+background-color: #f7dbbc;
+}
+
+.grilla{
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+  "navbar"
+  "contenido"
+  "pie de pagina";
+  grid-template-rows:auto 1fr auto ;
+  
+}
+
+nav{
+  background:#ff9500;
+  width: 100%;
+  height: 150px;
+}
+
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
+}
+
+.logo{
+  width: 450px;
+  height: auto;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 150px;
+  margin: 0 5px;
+}
+nav ul li a{
+  padding: 8px 30px;
+  color: #282726;
+  background-color: #ff9500;
+  border-radius: 30px;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 35px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* .contenido img{
+  width: 600px;
+  height: 300px;
+} */
+
+li a.active, li a:hover{
+  background: #D21A26;
+  transition: 0.5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: #F2E8C2;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none; 
+}
+
+#check{
+  display: none;
+}
+
+
+
+#onda_inf img{
+  width: 100vw;
+  margin-top: 0px;
+  border-image: fill;
+  border-color: #ff9500;
+  position: relative;
+  border: 10px 10px 10px 10px;
+  border-color: #D21A26;
+
+}
+.contenido{
+  display: flex;
+}
+
+.onda2{
+  margin-top: 300px;
+  position: relative;
+  border: 10px 10px 10px 10px;
+  border-color: #D21A26;
+}
+.celda h2{
+  margin: 100px 100px 50px 200px;
+  line-height: 25px;
+  font-size: 3em;
+}
+
+.celda p{
+height: 800px;
+  font-size: 1.5em;
+margin: 150px 100px 50px 200px;
+line-height: 50px;
+}
+.truck{
+  height: 500px;
+}
+.truck img{
+margin: 0px 0px 200px 400px;
+width: 800px;
+height: auto;
+}
+.comida{
+  width: 500px;
+}
+.pie-de-pagina {
+  height: 250px;
+  background-color: #4AB165;
+  padding: 1em 0;
+  color: #fffbd6;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: auto;
+}
+
+.pie-de-pagina .grupo-1 {
+    width: 100%;
+    /* margin: auto; */
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 5px 0px;
+}
+
+.pie-de-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-de-pagina .grupo-1 .box figure img {
+    width: 200px;
+    height: auto;
+}
+
+.box { 
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 35px;
+    line-height: 17px;
+}
+.pie-de-pagina .grupo-1 .box figure h2 {
+    margin-left: auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.pie-de-pagina .grupo-1 .box p {
+  margin-top: 10px;  
+  margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.pie-de-pagina .grupo-1 .red-social i {
+    display: inline-block;
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: #282726;
+    margin-top: 25px;
+    margin-right: 10px;
+    background-color: #ff9500;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5ms;
+}
+
+.pie-de-pagina .grupo-1 .red-social i:hover {
+    background-color: #998989;
+}
+.pie-de-pagina .grupo-2 {
+    background-color: #00562F;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fffbd6;
+}
+
+img {
+    grid-area: pie-de-pagina;
+    height: 150px;
+}
+
+/* PC escritorio */
+/*@media (max-width: 952px)
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .enlace{
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+}
+
+/* Celular (pantallas menores o iguales a 767px) */
+@media (max-width: 767px) {
+.checkbtn {
+  display: block;
+}
+ul{
+  position: fixed;
+  width: 50%;
+  height: 50vh;
+  background: #ff9500;
+  top: 150px;
+  left: -100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+nav ul li a{
+  font-size: 20px;
+}
+li a:hover, li a.active{
+  background: #4AB165;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+}
+
+/* Paleta de colores 
+#022601
+#FE3E00
+#FFD7B7
+#282726
+#00562F
+#FF9500
+#4AB165
+ */
