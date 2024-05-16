@@ -38,9 +38,15 @@ nav{
   padding: 20px 50px;
 }
 
-.enlace img{
-  width: 450px;
-  height: auto;
+.container {
+  width: 30vh;
+  max-width: 900px;
+  min-width: 100px;
+}
+
+img{
+  width: 150%;
+  height: 150%;
 }
 
 nav ul{

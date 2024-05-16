@@ -133,8 +133,9 @@ margin-left:-400%;
 	width: 30px;
 	height: 30px;
 	border-radius: 100%;
-	background: #9cf1cb;
-	border: 5px solid #3A7563;
+	background-image: radial-gradient(white 35%, black);
+   /* background: #9cf1cb;
+	border: 5px solid #3A7563; */
    margin: 0 10px;
 }
 #foto1:checked ~ #puntos label:nth-child(1)
