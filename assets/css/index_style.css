@@ -38,7 +38,7 @@ nav{
   padding: 20px 50px;
 }
 
-.logo{
+.enlace img{
   width: 450px;
   height: auto;
 }
@@ -65,10 +65,6 @@ nav ul li a{
   font-style: normal;
   text-transform: uppercase;
 }
-/* .contenido img{
-  width: 600px;
-  height: 300px;
-} */
 
 li a.active, li a:hover{
   background: #D21A26;
@@ -89,8 +85,6 @@ li a.active, li a:hover{
   display: none;
 }
 
-
-
 #onda_inf img{
   width: 100vw;
   margin-top: 0px;
@@ -103,6 +97,7 @@ li a.active, li a:hover{
 }
 .contenido{
   display: flex;
+  flex-direction: column;
 }
 
 .onda2{
@@ -111,23 +106,24 @@ li a.active, li a:hover{
   border: 10px 10px 10px 10px;
   border-color: #D21A26;
 }
-.celda h2{
-  margin: 100px 100px 50px 200px;
+.titulo {
+  height: 50px;
+  margin: 200px 100px 50px 200px;
   line-height: 25px;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .celda p{
-height: 800px;
-  font-size: 1.5em;
-margin: 150px 100px 50px 200px;
+height: 600px;
+font-size: 1.5em;
+margin: 100px 100px 50px 200px;
 line-height: 50px;
 }
 .truck{
   height: 500px;
 }
 .truck img{
-margin: 0px 0px 200px 400px;
+margin: 0px 0px 0px 400px;
 width: 800px;
 height: auto;
 }
@@ -221,11 +217,17 @@ img {
 /* Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
   .enlace{
-    padding-left: 20px;
+    padding: 5px,20px;
+    padding-left: 10px;
   }
   nav ul li a {
-    font-size: 14px;
+    font-size: 20px;
   }
+}
+
+.nav img{
+  width: 200px;
+  height: auto;
 }
 
 /* Celular (pantallas menores o iguales a 767px) */

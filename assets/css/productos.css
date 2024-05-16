@@ -97,8 +97,6 @@ margin-left:-400%;
 #control label{
 	transition: opacity 0.2s ease-out;
    display: none;
-   width: 50px;
-   height: 50px;
    opacity: .4;
    }
 #control label :hover{
@@ -110,6 +108,8 @@ margin-left:-400%;
 #foto4:checked ~ #control label:nth-child(5)
 #foto5:checked ~ #control label:nth-child(1){
    background: url(./image2.png) no-repeat;
+   width: 30px;
+   height: 30px;
    float:right;
    margin: 0 -50px 0 0;
    display: block;
@@ -130,18 +130,19 @@ margin-left:-400%;
 }
 #puntos label{
 	display: inline-block;
-	width: 10px;
-	height: 10px;
+	width: 30px;
+	height: 30px;
 	border-radius: 100%;
-	background: #ccc;
-	margin: 0 10px;
+	background: #9cf1cb;
+	border: 5px solid #3A7563;
+   margin: 0 10px;
 }
 #foto1:checked ~ #puntos label:nth-child(1)
 #foto2:checked ~ #puntos label:nth-child(2)
 #foto3:checked ~ #puntos label:nth-child(3)
 #foto4:checked ~ #puntos label:nth-child(4)
 #foto5:checked ~ #puntos label:nth-child(5){
-background: #444;
+background: #ff0101;
 }
 @media screen and (max-width: 900px) {
    #foto1:checked ~ #control label:nth-child(2),
