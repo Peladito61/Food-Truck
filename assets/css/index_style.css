@@ -114,6 +114,7 @@ li a.active, li a:hover{
 
 .titulo {
    flex: 1;
+   margin-top: 25px;
    text-align: center;
    font-size: 1.3em;
 }
@@ -275,7 +276,7 @@ nav ul li a{
    font-size: 25px;
 }
 li a:hover, li a.active{
-   background: #4AB165;
+   background: #D21A26;
 }
 #check:checked ~ ul{
    left: 0;
