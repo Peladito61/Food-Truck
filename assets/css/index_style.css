@@ -38,15 +38,17 @@ nav{
 }
 
 .container {
+   display: flex;
    width: 30vh;
    max-width: 900px;
    min-width: 100px;
+   flex:1
 }
 
-img{
+/* img{
    width: 150%;
    height: 150%;
-}
+} */
 
 nav ul{
    float: right;
@@ -135,7 +137,6 @@ li a.active, li a:hover{
    flex: 1;
 }
 
-
 .pie-de-pagina {
    height: 250px;
    background-color: #4AB165;
@@ -223,18 +224,32 @@ img {
 /* Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
 .enlace{
-   padding: 30px,20px;
+   padding: 10px,15px;
    padding-left: 20px;
 }
-nav ul li a {
-   font-size: 30px;
-   }
+
+img{
+   width: 90%;
+   height: 90%;
 }
 
-/* .nav img{
-   width: 200px;
-   height: auto;
-} */
+nav ul li a {
+   padding: 8px 20px;
+   font-optical-sizing: auto;
+   font-size: 25px;
+}
+
+.celda p{
+   /* height: 300px; */
+   font-size: 1em;
+   margin: 30px 30px 10px 30px;
+   line-height: 30px;
+}
+.box a{
+   font-size: 20px;
+}
+
+}
 
 /* Celular (pantallas menores o iguales a 767px) */
 @media (max-width: 767px) {
@@ -265,7 +280,50 @@ li a:hover, li a.active{
 #check:checked ~ ul{
    left: 0;
 }
+
+img{
+   width: 80%;
+   height: 80%;
 }
+
+.celda p{
+   height: 400px;
+   font-size: 1em;
+   margin: 10px 10px 10px 10px;
+   line-height: 25px;
+}
+.box { 
+   font-size: 1em;
+   margin-top: 10px;
+   margin-left: 10px;
+   line-height: 10px;
+}
+
+.box a{
+   font-size: 16px;
+}
+.box p{
+   font-size: 8px;
+   line-height: 10px;
+}
+.grupo-2 small{
+   font-size: 14px;
+}
+.pie-de-pagina .grupo-1 .red-social i {
+   display: inline-block;
+   text-decoration: none;
+   width: 35px;
+   height: 35px;
+   line-height: 25px;
+   color: #282726;
+   margin-top: 15px;
+   margin-right: 5px;
+   background-color: #ff9500;
+   border-radius: 50%;
+   text-align: center;
+   transition: 0.5ms;
+}
+} 
 
 /* Paleta de colores 
 #022601

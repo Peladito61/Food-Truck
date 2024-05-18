@@ -22,11 +22,9 @@ background-color: #f7dbbc;
    box-sizing: border-box;
 }
 .titulo {
-  .titulo {
    flex: 1;
    text-align: center;
    font-size: 1.5em;
-}
 }
 /* .container {
    width: 30vh;
@@ -50,7 +48,7 @@ background-color: #f7dbbc;
 #fotos{
    padding: 10px;
    border: 3px solid #ccc;
-   background: #fff;
+   background: #4AB165;
    position: relative;
    z-index: 1;
 }
