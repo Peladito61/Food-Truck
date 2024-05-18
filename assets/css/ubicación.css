@@ -98,6 +98,7 @@ li a.active, li a:hover{
    background: #4AB165;
    position: relative;
    z-index: 1;
+   margin-bottom: 50px;
 }
 .celda p{
 height: 200px;
@@ -105,10 +106,14 @@ font-size: 1.5em;
 line-height: 50px;
 }
 
-.truck img{
-margin: 0px 0px 0px 400px;
-width: 800px;
-height: auto;
+.receta{
+   padding: 10px;
+   border: 3px solid #ccc;
+   border-radius: 10%;
+   background: #4AB165;
+   position: relative;
+   z-index: 1;
+   margin-bottom: 50px;
 }
 
 /* PC escritorio */
