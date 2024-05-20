@@ -15,7 +15,7 @@
    margin: 0 auto; /* Esto centra el contenedor horizontalmente */
    margin-top: 80px;
    margin-bottom: 80px;
-   padding: 5px; /* Espacio alrededor del contenido dentro del contenedor */
+   padding: 20px; /* Espacio alrededor del contenido dentro del contenedor */
 }
 #formulario label{
    

@@ -25,7 +25,7 @@ line-height: 35px;
 .mapa{
    padding: 10px;
    border: 3px solid #ccc;
-   border-radius: 10%;
+   border-radius: 3%;
    background: #4AB165;
    position: relative;
    z-index: 1;
@@ -35,7 +35,7 @@ line-height: 35px;
 .receta iframe{
    padding: 10px;
    border: 3px solid #ccc;
-   border-radius: 10%;
+   border-radius: 3%;
    background: #4AB165;
    position: relative;
    z-index: 1;
