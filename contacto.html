@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/css/index_style.css">
+   <link rel="stylesheet" href="./assets/css/contacto.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet">
+   <script src="https://kit.fontawesome.com/cbd558f425.js" crossorigin="anonymous"></script>
+   <title>Contacto</title>
+</head>
+
+<body>
+   <div class="grilla">
+      <nav class="navbar">
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+         </label>
+         <a href="#" class="enlace">
+            <div class="container">
+               <img src="./assets/media/img/foodies.png" alt="logo" class="logo">
+            </div>
+         </a>
+         <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <!-- <div class="linea"></div> -->
+            <li><a href="productos.html">Productos</a></li>
+            <!-- <div class="linea"></div> -->
+            <li><a href="donde_estamos.html">Donde estamos</a></li>
+            <!-- <div class="linea"></div> -->
+            <li><a href="contacto.html">Contacto</a></li>
+         </ul>
+         <div class="ondas">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+               <path fill="#ff9500" fill-opacity="1"
+                  d="M0,288L48,293.3C96,299,192,309,288,298.7C384,288,480,256,576,213.3C672,171,768,117,864,133.3C960,149,1056,235,1152,224C1248,213,1344,107,1392,53.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+               </path>
+            </svg>
+         </div>
+      </nav>
+
+      <section>
+         <div class="titulo">
+            <h2>Contacto</h2>
+         </div>
+         <hr>
+         <form id="formulario">
+            <label for="nombre">Nombre y Apellido:</label><br><br>
+            <input type="text" id="nombreYApellido" name="nombre" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefono">Teléfono:</label><br><br>
+            <input type="text" id="teléfono" name="teléfono" required><br><br>
+
+            <label for="red">¿Cómo nos conociste?</label><br><br>
+            <select id="redes">
+               <option value="0" selected=""></option>
+               <option value="1">Linkedin </option>
+               <option value="2">Facebook </option>
+               <option value="3">Instagram </option>
+               <option value="4"> You Tube</option>
+               <option value="5">Otros </option>
+            </select><br><br>
+
+            <label for="socio">¿Eres socio de nuestra empresa?</label><br><br>
+            <input type="checkbox" name="socio" id="socio"><br><br>
+
+
+            <label for="mensaje">Mensaje:</label><br><br>
+            <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+         </form>
+
+      </section>
+
+      <footer class="pie-de-pagina">
+         <div class="grupo-1">
+            <div class="box">
+               <a>SOBRE NOSOTROS</a>
+               <p> Las fotografías en este sitio fueron extraídas de la web y son de procedencia indeterminada, están
+                  modificadas y adaptadas a solo efecto de ser presentadas en un Trabajo Práctico del programa Codo a
+                  Codo del Ministerio de Educación del Gobierno de Buenos Aires CABA</p>
+            </div>
+            <div class="box">
+               <figure>
+                  <a href="#">
+                     <img src="./assets/media/img/Foodies Truck.png" alt="logo">
+                  </a>
+               </figure>
+            </div>
+            <div class="box">
+               <a>SÍGUENOS</a>
+               <div class="red-social">
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-facebook-f"></i>
+               </div>
+            </div>
+         </div>
+         <div class="grupo-2">
+            <small>&copy;2024 <b>Foodies - Gastronomía sobre ruedas.</b> Todos los Derechos Reservados.</small>
+         </div>
+      </footer>
+      <script src="./assets/JS/form.js"></script>
+</body>
+
+</html>

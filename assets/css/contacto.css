@@ -1,0 +1,106 @@
+
+.titulo {
+   flex: 1;
+   text-align: center;
+   font-size: 1.5em;
+}
+
+#formulario{
+   text-align: center;
+   font-size: 16px;
+   background-color: green;
+   width: 60%; /* Puedes ajustar este valor según tus necesidades */
+   margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+   margin-top: 80px;
+   margin-bottom: 80px;
+   padding: 5px; /* Espacio alrededor del contenido dentro del contenedor */
+}
+
+
+input[type="text"] , [type="email"]{
+   width: 80%; /* Puedes ajustar este valor según tus necesidades */
+   padding: 5px; /* Espacio interno dentro del campo de entrada */
+   margin-bottom: 10px; /* Espacio entre los campos de entrada */
+}
+
+select {
+    width: 80%; /* Ancho del select */
+    padding: 5px; /* Relleno interno */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+input[type="checkbox"]{
+    transform: scale(1.5); /* Ajusta el tamaño */
+    margin-right: 5px; /* Espacio entre los checkboxes */
+}
+textarea {
+  width: 90%; /* Ancho del select */
+   height: 100px;
+  padding: 5px; /* Relleno interno */
+  font-size: 16px; /* Tamaño de la fuente */
+}
+
+input[type="submit"] {
+   width: 100px;
+   height: 50px;
+
+}
+
+/* DESDE ACA EL CSS DE ROBERTO */
+
+/* PC escritorio */
+/*@media (max-width: 952px)
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .enlace{
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+}
+
+/* Celular (pantallas menores o iguales a 767px) */
+@media (max-width: 767px) {
+.checkbtn {
+  display: block;
+}
+ul{
+  position: fixed;
+  width: 50%;
+  height: 50vh;
+  background: #ff9500;
+  top: 150px;
+  left: -100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+nav ul li a{
+  font-size: 20px;
+}
+li a:hover, li a.active{
+  background: #4AB165;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+/* .pie-de-pagina .grupo-1 .box p {
+  display: none;
+} */
+}
+
+/* Paleta de colores 
+#022601
+#FE3E00
+#FFD7B7
+#282726
+#00562F
+#FF9500
+#4AB165
+ */
