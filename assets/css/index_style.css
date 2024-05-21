@@ -44,10 +44,7 @@ nav{
    min-width: 100px;
    flex:1
 }
-
-/* .container img{
-url(assets\media\img\Foodies.png);
-} */
+ 
 
 nav ul{
    float: right;
