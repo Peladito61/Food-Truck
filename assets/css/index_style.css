@@ -43,11 +43,10 @@ nav{
    max-width: 900px;
    min-width: 100px;
    flex:1
-
 }
 
 .container img{
-background-image: url(assets\media\img\Foodies.png);
+   background: url(assets\media\img\Foodies.png);
 }
 
 nav ul{
