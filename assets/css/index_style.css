@@ -45,9 +45,9 @@ nav{
    flex:1
 }
 
-.container img{
-   background: url(assets\media\img\Foodies.png);
-}
+/* .container img{
+url(assets\media\img\Foodies.png);
+} */
 
 nav ul{
    float: right;
