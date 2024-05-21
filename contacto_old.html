@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="./assets/media/img/Foodies.ico">
    <link rel="stylesheet" href="./assets/css/index_style.css">
    <link rel="stylesheet" href="./assets/css/contacto.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
       rel="stylesheet">
    <script src="https://kit.fontawesome.com/cbd558f425.js" crossorigin="anonymous"></script>
-   <title>Food Truck</title>
+   <title>Contacto</title>
 </head>
 
 <body>
@@ -33,13 +33,13 @@
             </div>
          </a>
          <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html" class="active">Inicio</a></li>
             <!-- <div class="linea"></div> -->
             <li><a href="productos.html">Productos</a></li>
             <!-- <div class="linea"></div> -->
             <li><a href="donde_estamos.html">Donde estamos</a></li>
             <!-- <div class="linea"></div> -->
-            <li><a href="contacto.html" class="active">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
          </ul>
          <div class="ondas">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -50,46 +50,42 @@
          </div>
       </nav>
 
-      <main class="contenido">
+      <section>
          <div class="titulo">
-            <h2>Formulario de contacto</h2>
+            <h2>Contacto</h2>
          </div>
+         <form id="formulario">
+            <label for="nombre">Nombre y Apellido:</label><br><br>
+            <input type="text" id="nombreYApellido" name="nombre" required><br><br>
 
-         <section>
-            <form id="formulario">
-               <label for="nombreYApellido">Nombre y Apellido:</label><br><br>
-               <input type="text" id="nombreYApellido" name="nombre"><br><br>
+            <label for="email">Correo electrónico:</label><br><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-               <label for="email">Correo electrónico:</label><br><br>
-               <input type="email" id="email" name="email"><br><br>
+            <label for="telefono">Teléfono:</label><br><br>
+            <input type="text" id="teléfono" name="teléfono" required><br><br>
 
-               <label for="telefono">Teléfono:</label><br><br>
-               <input type="text" id="telefono" name="telefono"><br><br>
+            <label for="red">¿Cómo nos conociste?</label><br><br>
+            <select id="redes">
+               <option value="0" selected=""></option>
+               <option value="1">Linkedin </option>
+               <option value="2">Facebook </option>
+               <option value="3">Instagram </option>
+               <option value="4"> You Tube</option>
+               <option value="5">Otros </option>
+            </select><br><br>
 
-               <label for="redes">Como nos conociste?</label><br><br>
-               <select id="redes">
-                  <option value="0" selected="">Seleccione una opción</option>
-                  <option value="1">Linkedin </option>
-                  <option value="2">Facebook </option>
-                  <option value="3">Instagram </option>
-                  <option value="4"> Youtube</option>
-                  <option value="5">Otros </option>
-               </select><br><br>
+            <label for="socio">¿Eres socio de nuestra empresa?</label><br><br>
+            <input type="checkbox" name="socio" id="socio"><br><br>
 
-               <label for="socio">Eres socio de nuestra empresa?</label><br><br>
-               <input type="checkbox" name="socio" id="socio" onchange="habilitar()"><br><br>
 
-               <label for="imagen">Adjuntar carnet de socio:</label><br><br>
-               <input type="file" id="imagen" name="imagen" disabled><br><br>
+            <label for="mensaje">Mensaje:</label><br><br>
+            <textarea id="mensaje" name="mensaje" required></textarea><br><br>
 
-               <label for="mensaje">Mensaje:</label><br><br>
-               <textarea id="mensaje" name="mensaje" maxlength="450"></textarea><br><br>
-               <p id="mensajeContador">Carácteres restantes: <span id="contador">450</span></p>
+            <input type="submit" value="Enviar">
+         </form>
 
-               <input type="submit" value="Enviar">
-            </form>
-         </section>
-      </main>
+      </section>
+
       <footer class="pie-de-pagina">
          <div class="grupo-1">
             <div class="box">
@@ -101,7 +97,7 @@
             <div class="box">
                <figure>
                   <a href="#">
-                     <img src="./assets/media/img/Foodies_Truck.png" alt="logo">
+                     <img src="./assets/media/img/Foodies Truck.png" alt="logo">
                   </a>
                </figure>
             </div>
@@ -119,10 +115,7 @@
             <small>&copy;2024 <b>Foodies - Gastronomía sobre ruedas.</b> Todos los Derechos Reservados.</small>
          </div>
       </footer>
-   </div>
-
-
-   <script src="/assets/contacto.js"></script>
+      <script src="./JS/form.js"></script>
 </body>
 
 </html>

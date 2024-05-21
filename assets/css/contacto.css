@@ -1,58 +1,54 @@
-
-.titulo {
-   flex: 1;
-   text-align: center;
-   font-size: 1.5em;
+/* Estilos para el formulario */
+#formulario {
+  background: linear-gradient(to bottom, #4AB165, #ff9500);
+  width: 95%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid black;
 }
 
-#formulario{
-   text-align: center;
-   font-size: 16px;
-   color: #FFD7B7;
-   border-radius: 10px;
-   background-color: #00562F;
-   width: 60%; /* Puedes ajustar este valor según tus necesidades */
-   margin: 0 auto; /* Esto centra el contenedor horizontalmente */
-   margin-top: 80px;
-   margin-bottom: 80px;
-   padding: 20px; /* Espacio alrededor del contenido dentro del contenedor */
-}
-#formulario label{
-   
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 30px;
 }
 
-input[type="text"] , [type="email"]{
-   width: 80%; /* Puedes ajustar este valor según tus necesidades */
-   padding: 5px; /* Espacio interno dentro del campo de entrada */
-   margin-bottom: 10px; /* Espacio entre los campos de entrada */
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
 }
 
-select {
-   width: 80%; /* Ancho del select */
-   padding: 5px; /* Relleno interno */
-   font-size: 16px; /* Tamaño de la fuente */
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 10px;
 }
 
-input[type="checkbox"]{
-   transform: scale(1.5); /* Ajusta el tamaño */
-   margin-right: 5px; /* Espacio entre los checkboxes */
-}
 textarea {
-  width: 90%; /* Ancho del select */
-   height: 100px;
-   padding: 5px; /* Relleno interno */
-   font-size: 16px; /* Tamaño de la fuente */
+  height: 150px;
+  resize: none;
+  font-size: 1.5em;
 }
 
 input[type="submit"] {
-   width: 100px;
-   height: 50px;
-
+  width: 100%;
+  padding: 15px;
+  font-size: 1.8em;
+  background-color: #D21A26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* DESDE ACA EL CSS DE ROBERTO */
+input[type="submit"]:hover {
+  background-color: #282726;
+}
 
-/* PC escritorio */
-/*@media (max-width: 952px)
-
-/* Tablets */
+#mensajeContador {
+  text-align: right;
+  font-size: 1em;
+}
