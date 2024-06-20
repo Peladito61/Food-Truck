@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración | Foodies</title>
+     <link rel="icon" href="./assets/media/img/Foodies.ico">
+     <link rel="stylesheet" href="./assets/css/cositoParaAdministracion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+
+  </head>
+
+    <body>
+        
+    <div class="ondas">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+           <path fill="#ff9500" fill-opacity="1"
+              d="M0,288L48,293.3C96,299,192,309,288,298.7C384,288,480,256,576,213.3C672,171,768,117,864,133.3C960,149,1056,235,1152,224C1248,213,1344,107,1392,53.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+           </path>
+        </svg>
+     </div>
+    <div class="container">
+       <div class="wrapper">
+        <div class="title"><span>ADMINISTRACIÓN</span></div>
+        <form id="loginForm">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input id="nombre" type="text" name ="nombre" placeholder="Usuario" required>
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input id="password" type="password" name="password" placeholder="Contraseña" required>
+          </div>
+          <div class="pass"><a href="#">Recuperar contraseña?</a></div>
+          <div class="row button">
+            <input id="submitBtn" type="submit" value="Ingresar">
+            <span id="mensaje"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+
+    <script src="./assets/cositoParaAdministracion.js"></script>
+  </body>
+</html>
