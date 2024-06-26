@@ -14,6 +14,10 @@
    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/cbd558f425.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="./assets/css/pedidos.css"> 
+   <link rel="stylesheet" href="./assets/css/index_style.css">
+   <script src="./assets/pedidos.js"></script> 
+
+
    <title>Food Truck</title>
 </head>
 
@@ -44,8 +48,8 @@
             </svg>
          </div>
       </nav>
-
-      <h1>Crear Pedido</h1>
+      
+      <h1>Crea tu Pedido</h1>
       <form id="pedidoForm">
          <div>
             <label for="nombreCliente">Nombre:</label>
@@ -56,8 +60,8 @@
             <input type="email" id="emailCliente" required>
          </div>
          <div id="productosContainer"></div>
-         <p>Total Precio: <span id="totalPrecio">0.00</span> </p>
-         <button type="submit">Crear Pedido</button>
+         <p>Precio final: $ <span id="totalPrecio">0.00</span> </p>
+         <button type="submit">Realizar pedido</button>
       </form>
   
       <!-- Popup de Pedido -->
@@ -98,7 +102,6 @@
          </div>
       </footer>
    </div>
-   <script src="./assets/pedidos.js"></script> 
 </body>
 
 </html>

@@ -6,7 +6,7 @@
    list-style: none;
    font-family: "Montserrat", sans-serif;
    font-optical-sizing: auto;
-   font-weight: 600;
+   font-weight: 400;
    font-style: normal;
 }
 
@@ -122,9 +122,10 @@ li a.active, li a:hover{
 }
 .celda p{
    height: 600px;
-   font-size: 1.5em;
-   margin: 50px 100px 50px 200px;
+   font-size: 1.2em;
+   margin: 50px 100px 0px 200px;
    line-height: 35px;
+   text-align: center;
 }
 
 .truck {
