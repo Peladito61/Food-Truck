@@ -8,14 +8,12 @@
    <link rel="stylesheet" href="./assets/css/index_style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
-      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/cbd558f425.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./assets/css/pedidos.css"> 
    <title>Food Truck</title>
 </head>
 
@@ -32,10 +30,10 @@
             </div>
          </a>
          <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
             <li><a href="productos.html">Productos</a></li>
             <li><a href="donde_estamos.html">Donde estamos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>         
          </ul>
          <div class="ondas">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -46,32 +44,29 @@
          </div>
       </nav>
 
-      <main class="contenido">
-         <div class="titulo">
-            <h2>Gastronomía sobre ruedas</h2>
+      <h1>Crear Pedido</h1>
+      <form id="pedidoForm">
+         <div>
+            <label for="nombreCliente">Nombre:</label>
+            <input type="text" id="nombreCliente" required>
          </div>
-         <div class="celda">
-            <div class="truck">
-               <img src="./assets/media/img/FoodiesTruck_2.png" alt="truck">
-            </div>
-            <p>
-               ¡Bienvenidos a la experiencia gastronómica sobre ruedas que está revolucionando los sabores de Buenos
-               Aires! Nuestro food truck es mucho más que un simple vehículo, es un viaje culinario que te transportará
-               a un mundo de deliciosas opciones. Desde tentadoras comidas rápidas hasta exquisitos postres y
-               refrescantes bebidas, nuestro food truck es el oasis culinario que estabas esperando.
-               <br>
-               Cada semana nos aventuramos por los vibrantes barrios de Buenos Aires, llevando nuestra pasión por la
-               buena comida a cada rincón de la ciudad. Ya sea que nos encuentres en el corazón de Palermo, en la
-               bulliciosa Recoleta o en el encantador barrio de San Telmo, siempre encontrarás una variedad de platos
-               frescos y sabrosos esperándote.
-               <br>
-               Nuestra misión es ofrecerte una experiencia culinaria única, donde la calidad, la creatividad y el sabor
-               se fusionan en cada bocado. ¿Listo para unirte a nosotros en este emocionante viaje gastronómico?
-               ¡Síguenos en nuestras redes sociales para descubrir dónde estaremos la próxima semana y únete a la
-               revolución del sabor sobre ruedas en Buenos Aires!
-            </p>
+         <div>
+            <label for="emailCliente">Email:</label>
+            <input type="email" id="emailCliente" required>
          </div>
-      </main>
+         <div id="productosContainer"></div>
+         <p>Total Precio: <span id="totalPrecio">0.00</span> </p>
+         <button type="submit">Crear Pedido</button>
+      </form>
+  
+      <!-- Popup de Pedido -->
+      <div id="popupPedido" class="popup">
+         <div class="popup-content">
+            <span class="close">&times;</span>
+            <p id="numeroPedido"></p>
+         </div>
+      </div>
+
       <footer class="pie-de-pagina">
          <div class="grupo-1">
             <div class="box">
@@ -102,6 +97,7 @@
          </div>
       </footer>
    </div>
+   <script src="./assets/pedidos.js"></script> 
 </body>
 
 </html>
