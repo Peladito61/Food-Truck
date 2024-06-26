@@ -1,9 +1,4 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 h1 {
     text-align: center;
@@ -62,33 +57,6 @@ button[type="submit"]:hover {
 #totalPrecio {
     font-weight: bold;
     font-size: 18px;
-}
-
-footer.pie-de-pagina {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer.pie-de-pagina .grupo-1, footer.pie-de-pagina .grupo-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer.pie-de-pagina .box {
-    margin: 10px 0;
-}
-
-footer.pie-de-pagina .box a {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-footer.pie-de-pagina .red-social i {
-    margin: 0 10px;
-    font-size: 24px;
 }
 /* Estilos adicionales para el popup */
 .popup {
