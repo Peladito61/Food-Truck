@@ -1,42 +1,36 @@
 /* Estilos para el formulario */
 #formulario {
   background: linear-gradient(to bottom, #4AB165, #ff9500);
-  width: 95%;
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 15px;
-  border: 2px solid black;
+  width: 400px;
+  margin: 20px ;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 h2 {
   text-align: center;
-  font-size: 1.5em;
-  margin-bottom: 30px;
+  font-size: 1.3em;
+  margin-bottom: 5px;
 }
 
 input[type="text"], input[type="email"], select, textarea {
   width: 100%;
-  padding: 15px;
-  margin-bottom: 15px;
-  font-size: 1.5em;
+  padding: 10px;
+  font-size: 1.3em;
 }
 
-input[type="checkbox"] {
-  transform: scale(1.5);
-  margin-right: 10px;
-}
 
 textarea {
-  height: 150px;
-  resize: none;
-  font-size: 1.5em;
+  height: 100px;
+  font-size: 1em;
+  font-weight:normal;
 }
 
 input[type="submit"] {
   width: 100%;
-  padding: 15px;
-  font-size: 1.8em;
+  padding: 10px;
+  font-size: 1.3em;
   background-color: #D21A26;
   color: white;
   border: none;
@@ -50,5 +44,8 @@ input[type="submit"]:hover {
 
 #mensajeContador {
   text-align: right;
+  font-size: 1em;
+}
+#redes{
   font-size: 1em;
 }
