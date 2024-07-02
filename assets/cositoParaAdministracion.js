@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const response = JSON.parse(xhr.responseText);
             if (xhr.status === 200 && response.authenticated) {
                 mensaje.textContent = 'Inicio de sesión exitoso';
-                window.location.href = 'https://foodies-backend-three.vercel.app/api/datos'; // Redirige a la página seleccionada
+                window.location.href = './admin.html'; // Redirige a la página seleccionada
             } else {
                 mensaje.textContent = response.error || 'Error al iniciar sesión';
             }
