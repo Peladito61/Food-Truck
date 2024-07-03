@@ -15,23 +15,31 @@ document.addEventListener('DOMContentLoaded', function() {
         // URL del backend en Vercel
         const backendUrl = 'https://foodies-backend-three.vercel.app'; // Reemplaza con tu URL real de Vercel
 
-        xhr.open('POST', backendUrl + '/usuarios/validarInicioSesion', true);
+        xhr.open('POST', backendUrl + '/auth/login', true);
         xhr.setRequestHeader('Content-Type', 'application/json');
 
         xhr.onload = function() {
-            const response = JSON.parse(xhr.responseText);
-            if (xhr.status === 200 && response.authenticated) {
-                mensaje.textContent = 'Inicio de sesión exitoso';
-                window.location.href = './admin.html'; // Redirige a la página seleccionada
+            if (xhr.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+                if (response.auth && response.token) {
+                    // Guardar el token JWT en localStorage
+                    localStorage.setItem('token', response.token);
+                    mensaje.textContent = 'Inicio de sesión exitoso';
+                    // Redirigir al usuario a la página de administración
+                    window.location.href = 'admin.html';
+                } else {
+                    mensaje.textContent = response.error || 'Error al iniciar sesión';
+                }
             } else {
-                mensaje.textContent = response.error || 'Error al iniciar sesión';
+                mensaje.textContent = 'Error en la solicitud al servidor';
             }
         };
 
         xhr.onerror = function() {
             mensaje.textContent = 'Error de red al intentar iniciar sesión';
         };
-
+        console.log(nombre);
+        console.log(password);
         const data = JSON.stringify({ nombre: nombre, password: password });
         xhr.send(data);
     });
